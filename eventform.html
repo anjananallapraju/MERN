@@ -3,93 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Registration Form</title>
+    <title>Document</title>
     <h1><b><center>EVENT REGISTRATION FORM</center></b></h1><hr>
 
 </head>
 <body>
-    <form action="regform">
+    <form action="">
         <fieldset>
-            <h3><b>Personal Details:</b></h3>
-            <label for="firstname">First Name:</label><input type="text" name="fname" id="" placeholder="Enter your firstname"><br><br>
-            <label for="lastname">Last Name:</label><input type="text" name="lname" id="" placeholder="Enter your lastname"><br><br>
-            <label for="email">Email:</label><input type="email" name="email" id="" placeholder="enter your email"><br><br>
-            <label for="phno">Phone no:</label><input type="text" name="phno" id="" placeholder="enter your phno"><br><br>
-            Gender: <select name="gender" id="">
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-                <option value="other">Other</option>
+            
+            <fieldset>
+                <legend><b>STUDENT DETAILS</b></legend><br>           
+            <label for="name">First Name : </label>
+        <input type="text" name="name" placeholder="enter your first name"><br></br>
+        <label for="name1">Last Name : </label>
+        <input type="text" name="name1" placeholder="enter your last name"><br></br>
+        <label for="gender">Gender :</label>
+        <input type="radio" name="gender" id="">male
+        <input type="radio" name="gender" id="">female <br><br>
+        <label for="phone">Mobile number : </label>
+        <input type="number" name="phone" placeholder="enter your mobile number"><br><br>
+        <label for="email">Email : </label>
+        <input type="email" name="email" placeholder="enter your email"><br></br>
+        <label for="clg">College name : </label>
+        <input type="text" name="clg" placeholder="enter your college name"><br><br>
+        <label for="course">Course : </label>
+            <select name="course" id="">
+                <option value="1">degree</option>
+                <option value="2">btech</option>
+                <option value="3">mba</option>
             </select><br><br>
-            Date Of Birth: <input type="date" name="" id=""><br><br>
-            Are you a <input type="radio" name="hstlr" id="">Hosteler <b>OR</b> <input type="radio" name="hstlr" id="">Day Scholar
-        </fieldset><br><br>
-        <fieldset>
-           <h3> <b>Event Specific Details:</b></h3>
-            <label for="eventname">Event Name:  </label>
-            <select name="events" id="">
-                <optgroup label="cultural">
-                    <option value="dance">Dance</option>
-                    <option value="singing">Singing</option>
-                    <option value="host">Hosting</option>
+            <label for="special">branch : </label>
+            <select name="special" >
+                <optgroup label="degree">
+                    <option value="1">it</option>
+                    <option value="2">hec</option>
+                    <option value="3">cse</option>
                 </optgroup>
-                <optgroup label="Technical">
-                    <option value="Hackathon">Hackathon</option>
-                    <option value="coding challenges">Coding challenges</option>
+                <optgroup label="btech">
+                    <option value="1">cse</option>
+                    <option value="2">csm</option>
+                    <option value="3">csd</option>
+                    <option value="4">it</option>
+                    <option value="5">eee</option>
+                    <option value="6">ece</option>
+                    <option value="7">civil</option>
+                    <option value="8">mech</option>
+                </optgroup>
+                <optgroup label="mba">
+                    <option value="1">hr</option>
+                    <option value="2">finance</option>
+                    <option value="3">manegement</option>
                 </optgroup>
             </select><br><br>
-            Event Date: <input type="date" name="evdate" id=""><br><br>
-            <label for="session">Preferred Session:</label>
-            <select name="session" id="session">
-               <option value="mrng">Morning</option>
-               <option value="afternoon">AfterNoon</option>
-               <option value="evening">Evening</option>
-                
-            </select>
-
-
-        </fieldset><br><br>
-        <fieldset>
-          <h3>  <b> Address Details:</b></h3>
-           <label for="address" id="address">Address:</label> <textarea name="address" id="" placeholder="enter your present address"></textarea>
-           <br><br>
-           <label for="city">City:</label>
-           <input type="text" name="city" id="">
-           <br><br>
-           <label for="state">State:</label>
-           <select name="state" id="">
-            <option value="Andhra Pradesh">Andhra Pradesh</option>
-            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
-            <option value="odisha">Odisha</option>
-            <option value="kerala">Kerala</option>
-            <option value="karnataka">Karnataka</option>
-            <option value="tamilnadu">Tamilnadu</option>
-           </select><br><br>
-           <label for="pincode">Pincode:</label>
-           <input type="text" name="pincode" id="">
-
-        </fieldset>
-        <br><br>
-        <fieldset>
-        <h3><b>Proffessional/Academic Details:</b></h3>
-            <label for="organization">Organization/Company Name:</label>
-        <input type="text" id="organization" name="organization"><br><br>
-
-        <label for="jobTitle">Job Title/Designation:</label>
-        <input type="text" id="jobTitle" name="jobTitle"><br><br>
-
-        <label for="institution">Institution Name:</label>
-        <input type="text" id="institution" name="institution"><br><br>
-
-        </fieldset><br><br>
-        <fieldset>
-            <h3><b>Event Requirements:</b></h3>
-            <label for="foodPreference">Food Preferences:</label>
-        <select id="foodPreference" name="foodPreference">
-            <option value="vegetarian">Vegetarian</option>
-            <option value="nonVegetarian">Non-Vegetarian</option>
-            <option value="vegan">Vegan</option>
-        </select><br><br>
-        <label for="sizee">Tshirt-Size:</label>
+            <label for="year">Year of the study : </label>
+            <select name="year" id="">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select><br><br>
+            <label for="stay">Stay : </label>
+            <select name="stay" id="">
+                <option value="1">dayscholar</option>
+                    <option value="2">hostel</option>
+            </select><br><br><BR>
+            <fieldset>
+                <legend><b>ADDRESS DETAILS</b></legend><BR>
+                 <label for="address" id="address">Address:</label> <textarea name="address" id="" placeholder="enter your present address"></textarea>
+                 <br><br>
+                 <label for="city">City:</label>
+                 <input type="text" name="city" id="">
+                 <br><br>
+                 <label for="state">State:</label>
+                 <select name="state" id="">
+                  <option value="Andhra Pradesh">Andhra Pradesh</option>
+                  <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                  <option value="odisha">Odisha</option>
+                  <option value="kerala">Kerala</option>
+                  <option value="karnataka">Karnataka</option>
+                  <option value="tamilnadu">Tamilnadu</option>
+                 </select><br><br>
+                 <label for="pincode">Pincode:</label>
+                 <input type="text" name="pincode" id="">
+      
+              </fieldset>
+              <br><br>
+    </fieldset><br>
+    <fieldset>
+        <legend><b>EVENT DETAILS</b></legend>
+        <label for="role">Role : </label>
+        <select name="role" id="">
+            <option value="1">participant</option>
+            <option value="2">volunteer</option>
+        </select><br>
+        <p>// Kindly ignore to fill below details if you are a volunteer //</p>
+        <label for="special">Event : </label>
+            <select name="special" >
+                <optgroup label="educational event">
+                    <option value="1">workshop</option>
+                    <option value="2">webinar</option>
+                    <option value="3">hackathon</option>
+                </optgroup>
+                <optgroup label="cultural event">
+                    <option value="1">group dancing</option>
+                    <option value="2">group singing</option>
+                    <option value="3">drama</option>
+                    <option value="4">solo dancing</option>
+                    <option value="5">solo singing</option>
+                    <option value="6">acting</option>
+                    <option value="7">painting</option>
+                    <option value="8">crafting</option>
+                </optgroup>
+                <optgroup label="sports events">
+                    <option value="1">cricket</option>
+                    <option value="2">go carting</option>
+                    <option value="3">football</option>
+                </optgroup>
+            </select><br><br>
+            <label for="session">Preferred session : </label>
+            <select name="session" id="">
+                <option value="1">10:30 am - 12:00 pm (e,c,s)</option>
+                <option value="2">2:00 pm - 3:30 pm (c,s)</option>
+                <option value="3">6:30 pm - 8:00pm(c)</option>
+            </select><br><BR>
+            <label for="sizee">Tshirt-Size:</label>
         <select name="sizee" id="">
             <option value="xs">XS</option>
             <option value="s">S</option>
@@ -98,33 +135,60 @@
             <option value="xl">XL</option>
             <option value="free">FREESIZE</option>
         </select>
-        </fieldset><br><br>
-        <fieldset>
-          <h3>  <b>Payment and Confirmation:</b></h3>
-            Payment Method: <select name="method" id="">
-                <option value="creditCard">Credit card</option>
-                <option value="upi">UPI</option>
-                <option value="netbanking">Bank-Transfer</option>
-            </select><br><br>
-            Promo code: <input type="text" name="promocode" id=""><br><br>
-
-        </fieldset><br><br>
-        <fieldset>
-            <h3><b>Additional Information:</b></h3>
-            Emergency Contact No: <input type="text" name="" id=""><br><br>
-            How did you hear about us? <select name="media" id="">
-                <option value="socialmedia">Social Media</option>
-                <option value="Friends">Friends</option>
-                <option value="college">College</option>
-                <option value="other">Other</option>
-            </select>  <br><br>
-            <input type="checkbox" name="terms" id=""> I agree to the terms and conditions..!! <br><br>
-            Have you attended our events before? <input type="radio" name="sno" id="">YES <input type="radio" name="sno" id="">NO <br><br>
-            Speak about your interests: <textarea name="interests" id="" required>Enter your interests</textarea>
-
-        </fieldset><br><br>
-        <button type="submit">Register</button> &emsp13;<button type="reset">Reset</button><br><br>
-        <i>Lets catchup at event..!!</i>
+            <p><b>note : </b> <br>e-eductional events <br>c-cultural events <br> s- sports events </p>
+            <p>you can register for more than one event </p>
+            <label for="namet">Team name : </label>
+            <input type="text" name="namet" placeholder="enter your team name"><br><br>
+            <label for="mem">Members in your team : </label>
+            <input type="number" name="mem">           
+    </fieldset>
+    <fieldset>
+        <legend><b>FEE DETAILS</b></legend>
+        <label for="fee">Fee : </label>
+        <input type="text" name="fee" id="fee" placeholder="select" list="fees">
+        <datalist id="fees">
+            <option value="eductional">1500</option>
+            <option value="cultural(single)">3000</option>
+            <option value="cultural(group)">6000</option>
+            <option value="sports">8000</option>
+        </datalist><br><br>
+        <label for="mode">Fee mode : </label>
+        <input type="radio" name="mode" id="">online
+        <input type="radio" name="mode" >offline <br>
+        <p>make online payment to this number : <b>9876543210</b></p>
+        <p>make offline payment at this address : <b>aitam college,tekkali</b></p>
+        <p>kindly pay the fee before the event</p>
+    </fieldset><br>
+    <fieldset>
+        <legend><b>ADDITIONAL DETAILS</b> : </legend>
+        <label for="id">ID proof : </label>
+        <input type="file" name="id" placeholder="upload your id proof"><br><br>
+        <label for="meal">Dietary Preferences : </label>
+        <select name="meal" id="">
+            <option value="1">veg</option>
+            <option value="2">non veg</option>
+            <option value="3">vegan</option>
+        </select><br><br>
+        <label for="feed">Feedback : </label><br>
+        <textarea name="feed" id="" cols="30" rows="5"></textarea>
+        <p>Regestration start from <b>17-12-2024</b> to <b>25-12-2024</b></p>
+        <p>event is on <b>27-12-2024</b></p>
+        <p>emergency contact number : <b>9087654321</b></p>
+    </fieldset>
+    <p><b>Terms and Conditions</b></p>
+        <ul type="square">
+            <li>Students must carry a valid college ID at all times during the event.</li>
+            <li>Participants should adhere to the event schedule and be punctual.</li>
+            <li>Any form of misconduct, including harassment or bullying, is strictly prohibited.</li>
+            <li>Respect the venue, equipment, and fellow participants.</li>
+            <li>All participants must follow the instructions given by the event coordinators.</li>
+            <li>Certificates of participation will be awarded only to students attending the entire event.</li>
+            <li>By registering, participants agree to these terms and conditions.</li>
+        </ul><br>
+        <input type="checkbox" name="" id=""> Hereby, I agree to the terms and conditions <br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </fieldset>
     </form>
 </body>
 </html>
