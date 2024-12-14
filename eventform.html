@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration Form</title>
+    <h1><b><center>EVENT REGISTRATION FORM</center></b></h1><hr>
+
+</head>
+<body>
+    <form action="regform">
+        <fieldset>
+            <h3><b>Personal Details:</b></h3>
+            <label for="firstname">First Name:</label><input type="text" name="fname" id="" placeholder="Enter your firstname"><br><br>
+            <label for="lastname">Last Name:</label><input type="text" name="lname" id="" placeholder="Enter your lastname"><br><br>
+            <label for="email">Email:</label><input type="email" name="email" id="" placeholder="enter your email"><br><br>
+            <label for="phno">Phone no:</label><input type="text" name="phno" id="" placeholder="enter your phno"><br><br>
+            Gender: <select name="gender" id="">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br><br>
+            Date Of Birth: <input type="date" name="" id=""><br><br>
+            Are you a <input type="radio" name="hstlr" id="">Hosteler <b>OR</b> <input type="radio" name="hstlr" id="">Day Scholar
+        </fieldset><br><br>
+        <fieldset>
+           <h3> <b>Event Specific Details:</b></h3>
+            <label for="eventname">Event Name:  </label>
+            <select name="events" id="">
+                <optgroup label="cultural">
+                    <option value="dance">Dance</option>
+                    <option value="singing">Singing</option>
+                    <option value="host">Hosting</option>
+                </optgroup>
+                <optgroup label="Technical">
+                    <option value="Hackathon">Hackathon</option>
+                    <option value="coding challenges">Coding challenges</option>
+                </optgroup>
+            </select><br><br>
+            Event Date: <input type="date" name="evdate" id=""><br><br>
+            <label for="session">Preferred Session:</label>
+            <select name="session" id="session">
+               <option value="mrng">Morning</option>
+               <option value="afternoon">AfterNoon</option>
+               <option value="evening">Evening</option>
+                
+            </select>
+
+
+        </fieldset><br><br>
+        <fieldset>
+          <h3>  <b> Address Details:</b></h3>
+           <label for="address" id="address">Address:</label> <textarea name="address" id="" placeholder="enter your present address"></textarea>
+           <br><br>
+           <label for="city">City:</label>
+           <input type="text" name="city" id="">
+           <br><br>
+           <label for="state">State:</label>
+           <select name="state" id="">
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+            <option value="odisha">Odisha</option>
+            <option value="kerala">Kerala</option>
+            <option value="karnataka">Karnataka</option>
+            <option value="tamilnadu">Tamilnadu</option>
+           </select><br><br>
+           <label for="pincode">Pincode:</label>
+           <input type="text" name="pincode" id="">
+
+        </fieldset>
+        <br><br>
+        <fieldset>
+        <h3><b>Proffessional/Academic Details:</b></h3>
+            <label for="organization">Organization/Company Name:</label>
+        <input type="text" id="organization" name="organization"><br><br>
+
+        <label for="jobTitle">Job Title/Designation:</label>
+        <input type="text" id="jobTitle" name="jobTitle"><br><br>
+
+        <label for="institution">Institution Name:</label>
+        <input type="text" id="institution" name="institution"><br><br>
+
+        </fieldset><br><br>
+        <fieldset>
+            <h3><b>Event Requirements:</b></h3>
+            <label for="foodPreference">Food Preferences:</label>
+        <select id="foodPreference" name="foodPreference">
+            <option value="vegetarian">Vegetarian</option>
+            <option value="nonVegetarian">Non-Vegetarian</option>
+            <option value="vegan">Vegan</option>
+        </select><br><br>
+        <label for="sizee">Tshirt-Size:</label>
+        <select name="sizee" id="">
+            <option value="xs">XS</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+            <option value="free">FREESIZE</option>
+        </select>
+        </fieldset><br><br>
+        <fieldset>
+          <h3>  <b>Payment and Confirmation:</b></h3>
+            Payment Method: <select name="method" id="">
+                <option value="creditCard">Credit card</option>
+                <option value="upi">UPI</option>
+                <option value="netbanking">Bank-Transfer</option>
+            </select><br><br>
+            Promo code: <input type="text" name="promocode" id=""><br><br>
+
+        </fieldset><br><br>
+        <fieldset>
+            <h3><b>Additional Information:</b></h3>
+            Emergency Contact No: <input type="text" name="" id=""><br><br>
+            How did you hear about us? <select name="media" id="">
+                <option value="socialmedia">Social Media</option>
+                <option value="Friends">Friends</option>
+                <option value="college">College</option>
+                <option value="other">Other</option>
+            </select>  <br><br>
+            <input type="checkbox" name="terms" id=""> I agree to the terms and conditions..!! <br><br>
+            Have you attended our events before? <input type="radio" name="sno" id="">YES <input type="radio" name="sno" id="">NO <br><br>
+            Speak about your interests: <textarea name="interests" id="" required>Enter your interests</textarea>
+
+        </fieldset><br><br>
+        <button type="submit">Register</button> &emsp13;<button type="reset">Reset</button><br><br>
+        <i>Lets catchup at event..!!</i>
+    </form>
+</body>
+</html>
