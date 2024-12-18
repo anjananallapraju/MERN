@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.landing{
+    background: url(./images/mountain1.jpeg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+}
+.landing h1{
+    font-size: 60px;
+    color: white;
+    padding-top: 250px;
+    text-align: center;
+}
+.landing p{
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    padding-top:20px;
+    font-style: italic;
+
+}
+button{
+    padding: 10px 50px;
+    background-color: white;
+    color: black;
+    border:2px solid black;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 20px;
+    margin-left: 40%;
+}
